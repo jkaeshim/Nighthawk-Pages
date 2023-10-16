@@ -1,6 +1,6 @@
 ---
 layout: scheduleStudent
-title: Computer Science Lab Notebook
+title: Song Search
 units: "1,2"
-course: Song Search
+course: compsci
 ---
