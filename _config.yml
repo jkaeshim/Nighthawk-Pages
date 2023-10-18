@@ -7,7 +7,7 @@ baseurl: "/Nighthawk-Pages"
 remote_theme: jekyll/minima
 minima:
   social_links:
-    - { platform: github, user_url: "https://github.com/nighthawkcoders"}
+    - { platform: github, user_url: "9A71C0E1-B815-43E6-BE09-FDE9E21C59C3IMG_7196.jpeg"}
     - { platform: github, user_url: "https://github.com/Tirth-Thakkar"}
     - { platform: github, user_url: "https://github.com/h4seeb-cmd"}
 # remote_theme: pages-themes/dinky@v0.2.0
