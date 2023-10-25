@@ -14,7 +14,7 @@ Welcome to our website
     <title>visit website</title>
 </head>
 <body>
-    <button id="linkButton">visit movie search</button>
+    <button id="linkButton">Visit movie search</button>
 
     <script>
         // Add a click event listener to the button
@@ -30,7 +30,7 @@ Welcome to our website
     <title>visit website</title>
 </head>
 <body>
-    <button id="linkButton">visit song search</button>
+    <button id="linkButton">Visit song search</button>
 
     <script>
         // Add a click event listener to the button
