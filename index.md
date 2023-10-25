@@ -15,7 +15,11 @@ Welcome to our website
     <title>visit website</title>
 </head>
 <body>
+<<<<<<< HEAD
     <button id="movieButton">visit movie search</button>
+=======
+    <button id="linkButton">Visit movie search</button>
+>>>>>>> d942171a23dc3023f99e2e5e8de1e9054d22ee62
 
 <button id="songButton">visit song search</button>
 
@@ -25,6 +29,18 @@ Welcome to our website
             // Redirect to the specified link
             window.location.href = "https://jkaeshim.github.io/Nighthawk-Pages//2023/10/12/MovieImproved_IPYNB_2_.html";
         });
+<<<<<<< HEAD
+=======
+    </script>
+</body>
+</html>
+<html>
+<head>
+    <title>visit website</title>
+</head>
+<body>
+    <button id="linkButton">Visit song search</button>
+>>>>>>> d942171a23dc3023f99e2e5e8de1e9054d22ee62
 
         // Add a click event listener to the song button
         document.getElementById("songButton").addEventListener("click", function() {
