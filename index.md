@@ -13,11 +13,8 @@ courses: { compsci: {week: 3} }
     <title>Search Homepage</title>
     <style>
         body {
-            background-image: url(![Alt text](images/pngtree-black-tv-banner-background-image_344385.jpg));
-            background-size: cover; /* Adjusts the background image to cover the entire body */
-            background-repeat: no-repeat; /* Prevents the background image from repeating */
+          background-color: lightblue;
         }
-    </style>
 </head>
 <body>
     <h1>Welcome to the Search</h1>
