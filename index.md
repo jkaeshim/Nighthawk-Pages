@@ -3,7 +3,7 @@ toc: true
 comments: false
 layout: post
 title: Homepage
-description: finder
+description: Finder
 type: plans
 courses: { compsci: {week: 3} }
 ---
@@ -19,7 +19,7 @@ courses: { compsci: {week: 3} }
     <p>Choose what you want to search for:</p>
 
     <div>
-        <a href="_notebooks/2023-10-12-MovieImproved.ipynb">
+        <a href="https://jkaeshim.github.io/Nighthawk-Pages//2023/10/12/MovieImproved_IPYNB_2_.html">
             <button>Movie Search</button>
         </a>
     </div>
