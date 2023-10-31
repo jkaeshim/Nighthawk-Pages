@@ -25,13 +25,13 @@ courses: { compsci: {week: 3} }
     </div>
 
     <div>
-        <a href="_notebooks/2023-10-13-SongAPI.ipynb">
+        <a href="https://jkaeshim.github.io/Nighthawk-Pages//2023/10/13/SongAPI_IPYNB_2_.html">
             <button>Song Search</button>
         </a>
     </div>
 
     <div>
-        <a href="_notebooks/2023-10-23-ShowAPI.ipynb">
+        <a href="https://jkaeshim.github.io/Nighthawk-Pages//2023/10/23/ShowAPI_IPYNB_2_.html">
             <button>Show Search</button>
         </a>
     </div>
