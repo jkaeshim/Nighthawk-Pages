@@ -7,15 +7,15 @@ description: finder
 type: plans
 courses: { compsci: {week: 3} }
 ---
-## Home page
-Welcome to our website
+
+### Welcome to our website!
 
 <html>
 <head>
     <title>Search Homepage</title>
 </head>
 <body>
-    <h1>Welcome to the Search Homepage</h1>
+    <h1>Welcome to the Search</h1>
     <p>Choose what you want to search for:</p>
 
     <div>
