@@ -11,10 +11,6 @@ courses: { compsci: {week: 3} }
 <html>
 <head>
     <title>Search Homepage</title>
-    <style>
-        body {
-          background-color: lightblue;
-        }
 </head>
 <body>
     <h1>Welcome to the Search</h1>
