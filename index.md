@@ -8,8 +8,6 @@ type: plans
 courses: { compsci: {week: 3} }
 ---
 
-### Welcome to our website!
-
 <html>
 <head>
     <title>Search Homepage</title>
