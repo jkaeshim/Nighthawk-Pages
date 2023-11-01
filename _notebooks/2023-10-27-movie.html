@@ -1,0 +1,65 @@
+<script>
+    // Function to handle form submission and send movie data to the backend
+    document.getElementById('addMovieForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        // Extract movie data from the form
+        const title = document.getElementById('title').value;
+        const actors = document.getElementById('actors').value;
+        const summary = document.getElementById('summary').value;
+
+        // Create a JSON object with movie data
+        const movieData = {
+            title: title,
+            actors: actors,
+            summary: summary
+        };
+
+        // Send a POST request to the backend API to save the movie
+        fetch('/api/movies', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(movieData)
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Handle the response from the backend, if needed
+            // You can display a success message or update the movie list
+            // Here, we're assuming that the backend responds with the saved movie data
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Error saving movie:', error);
+        });
+    });
+
+    // Function to fetch and display saved movies
+    function fetchSavedMovies() {
+        // Send a GET request to the backend API to retrieve saved movies
+        fetch('/api/movies')
+        .then(response => response.json())
+        .then(data => {
+            const movieList = document.getElementById('movieList');
+            movieList.innerHTML = ''; // Clear the existing list
+
+            // Iterate through the saved movies and add them to the list
+            data.forEach(movie => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    <strong>Title:</strong> ${movie.title}<br>
+                    <strong>Actors:</strong> ${movie.actors}<br>
+                    <strong>Summary:</strong> ${movie.summary}<br>
+                `;
+                movieList.appendChild(listItem);
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching saved movies:', error);
+        });
+    }
+
+    // Fetch and display saved movies when the page loads
+    fetchSavedMovies();
+</script>
