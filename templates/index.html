@@ -5,7 +5,7 @@
 </head>
 <body>
     <h1>Favorite Movies</h1>
-    <form action="/add_movie" method="post">
+    <form id="addMovieForm">
         <label for="title">Title:</label>
         <input type="text" id="title" name="title" required><br>
 
@@ -17,17 +17,27 @@
 
         <button type="submit">Add Movie</button>
     </form>
-    <ul>
-        {% for movie in movies %}
-            <li>
-                <strong>Title:</strong> {{ movie[1] }}<br>
-                <strong>Actors:</strong> {{ movie[2] }}<br>
-                <strong>Summary:</strong> {{ movie[3] }}<br>
-                <form action="/delete_movie/{{ movie[0] }}" method="post">
-                    <button type="submit">Delete</button>
-                </form>
-            </li>
-        {% endfor %}
-    </ul>
+
+    <h2>Favorite Movies</h2>
+    <ul id="movieList"></ul>
+
+    <button id="fetchTmdbButton">Fetch TMDb Movie</button>
+
+    <script>
+        // JavaScript code to handle interactions with the backend and fetching TMDb movie
+        document.getElementById('fetchTmdbButton').addEventListener('click', fetchTmdbMovie);
+
+        function fetchTmdbMovie() {
+            fetch('/api/tmdb_movie')
+                .then(response => response.json())
+                .then(data => {
+                    // Handle data from TMDb API, e.g., display movie details
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error('Error fetching movie data:', error);
+                });
+        }
+    </script>
 </body>
 </html>
